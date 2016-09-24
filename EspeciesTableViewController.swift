@@ -102,7 +102,7 @@ class EspeciesTableViewController: UITableViewController, UISplitViewControllerD
             if let indexPath = self.tableView.indexPathForSelectedRow{
                 let(especie) = especies[indexPath.row]
                 if let navcon = segue.destination as? UINavigationController {
-                    if let destino = navcon.visibleViewController as? EspecieDetailViewController {
+                    if let destino = navcon.visibleViewController as?  PetDetailViewController{
                         destino.especie = "Espécie: \(especie) "
                     }
                 }

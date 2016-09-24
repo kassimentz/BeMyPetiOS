@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Especie Detail View Controller-->
+        <!--Pet Detail View Controller-->
         <scene sceneID="bel-zU-J2O">
             <objects>
-                <viewController id="Dq8-fI-0Jd" customClass="EspecieDetailViewController" customModule="Be_My_Pet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dq8-fI-0Jd" customClass="PetDetailViewController" customModule="Be_My_Pet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dZv-Tz-T9p"/>
                         <viewControllerLayoutGuide type="bottom" id="xf9-3B-y5G"/>

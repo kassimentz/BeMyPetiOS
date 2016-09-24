@@ -8,7 +8,8 @@
 
 import UIKit
 
-class EspecieDetailViewController: UIViewController {
+class PetDetailViewController: UIViewController {
+    //ver DetailAulaController em https://github.com/rafasgj/DiarioDeClasse
 
     var especie: String? {
         //depois de setar o valor

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C293E6101D96C64E002BC562 /* EspecieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E60F1D96C64E002BC562 /* EspecieTableViewCell.swift */; };
-		C293E6121D96C66A002BC562 /* EspecieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E6111D96C66A002BC562 /* EspecieDetailViewController.swift */; };
+		C293E6121D96C66A002BC562 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E6111D96C66A002BC562 /* PetDetailViewController.swift */; };
 		C293E6151D96EFD9002BC562 /* Pet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E6131D96EFD9002BC562 /* Pet+CoreDataClass.swift */; };
 		C293E6161D96EFD9002BC562 /* Pet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E6141D96EFD9002BC562 /* Pet+CoreDataProperties.swift */; };
+		C293E6181D96FC7F002BC562 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E6171D96FC7F002BC562 /* CoreDataTableViewController.swift */; };
 		C2F406171D8D850A00C64625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F406161D8D850A00C64625 /* AppDelegate.swift */; };
 		C2F4061C1D8D850A00C64625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F4061A1D8D850A00C64625 /* Main.storyboard */; };
 		C2F4061F1D8D850A00C64625 /* Be_My_Pet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2F4061D1D8D850A00C64625 /* Be_My_Pet.xcdatamodeld */; };
@@ -21,9 +22,10 @@
 
 /* Begin PBXFileReference section */
 		C293E60F1D96C64E002BC562 /* EspecieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EspecieTableViewCell.swift; sourceTree = "<group>"; };
-		C293E6111D96C66A002BC562 /* EspecieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EspecieDetailViewController.swift; path = "Be My Pet/EspecieDetailViewController.swift"; sourceTree = "<group>"; };
+		C293E6111D96C66A002BC562 /* PetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetDetailViewController.swift; path = "Be My Pet/PetDetailViewController.swift"; sourceTree = "<group>"; };
 		C293E6131D96EFD9002BC562 /* Pet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C293E6141D96EFD9002BC562 /* Pet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C293E6171D96FC7F002BC562 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
 		C2F406131D8D850A00C64625 /* Be My Pet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Be My Pet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F406161D8D850A00C64625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2F4061B1D8D850A00C64625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C293E61A1D96FFBF002BC562 /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pet;
+			sourceTree = "<group>";
+		};
 		C2F4060A1D8D850A00C64625 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +73,7 @@
 		C2F406151D8D850A00C64625 /* Be My Pet */ = {
 			isa = PBXGroup;
 			children = (
+				C293E61A1D96FFBF002BC562 /* Pet */,
 				C2F406301D8D8A0C00C64625 /* EspecieController */,
 				C2F4062C1D8D85F900C64625 /* View */,
 				C2F4062D1D8D861500C64625 /* Data Model */,
@@ -97,6 +107,7 @@
 				C293E6131D96EFD9002BC562 /* Pet+CoreDataClass.swift */,
 				C293E6141D96EFD9002BC562 /* Pet+CoreDataProperties.swift */,
 				C2F4061D1D8D850A00C64625 /* Be_My_Pet.xcdatamodeld */,
+				C293E6171D96FC7F002BC562 /* CoreDataTableViewController.swift */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -106,7 +117,7 @@
 			children = (
 				C2F4062E1D8D89E000C64625 /* EspeciesTableViewController.swift */,
 				C293E60F1D96C64E002BC562 /* EspecieTableViewCell.swift */,
-				C293E6111D96C66A002BC562 /* EspecieDetailViewController.swift */,
+				C293E6111D96C66A002BC562 /* PetDetailViewController.swift */,
 			);
 			name = EspecieController;
 			path = ..;
@@ -187,8 +198,9 @@
 			files = (
 				C2F4062F1D8D89E000C64625 /* EspeciesTableViewController.swift in Sources */,
 				C293E6161D96EFD9002BC562 /* Pet+CoreDataProperties.swift in Sources */,
+				C293E6181D96FC7F002BC562 /* CoreDataTableViewController.swift in Sources */,
 				C2F4061F1D8D850A00C64625 /* Be_My_Pet.xcdatamodeld in Sources */,
-				C293E6121D96C66A002BC562 /* EspecieDetailViewController.swift in Sources */,
+				C293E6121D96C66A002BC562 /* PetDetailViewController.swift in Sources */,
 				C293E6101D96C64E002BC562 /* EspecieTableViewCell.swift in Sources */,
 				C2F406171D8D850A00C64625 /* AppDelegate.swift in Sources */,
 				C293E6151D96EFD9002BC562 /* Pet+CoreDataClass.swift in Sources */,
@@ -256,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -298,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
