@@ -11,7 +11,7 @@ import CoreData
 
 class CoreDataTableViewController: UITableViewController,  NSFetchedResultsControllerDelegate
 {
-    var managedObjectContext = (UIApplication.shared.delegate as? AppDelegate)?.managedObjectContext
+    var managedObjectContext = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     var fetchedResultsController: NSFetchedResultsController<NSManagedObject>? {
         didSet {
